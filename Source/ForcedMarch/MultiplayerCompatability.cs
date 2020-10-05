@@ -10,10 +10,10 @@ namespace ForcedMarch
         {
             static MultiplayerCompatibility()
             {
-                if (!MP.enabled) return;
+                 if (!MP.enabled) return;
 
-                MP.RegisterSyncMethod(typeof(ForcedMarchUtility), nameof(ForcedMarchUtility.ForcedMarchCommand));
-
+                // MP.RegisterSyncMethod(typeof(ForcedMarchUtility), nameof(ForcedMarchUtility.ForcedMarchCommand));
+                 MP.RegisterAll();
             }
         }
     }
