@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Forced March</name>
+    <author>Ari</author>
+    <supportedVersions>
+        <li>1.1</li>
+    </supportedVersions>
+    <description>Allows you to march your caravans through the night. Be careful not to leave it on! You may end up with some cranky colonists.</description>
+    <packageId>ari.forcedmarch</packageId>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases</downloadUrl>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Royalty</li>
+    <li>brrainz.harmony</li>
+  </loadAfter>
+
+</ModMetaData>

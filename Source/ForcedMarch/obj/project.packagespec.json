@@ -1,0 +1,31 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Program Files (x86)\\Rimworld Royalty\\Mods\\Forced March\\Source\\ForcedMarch\\ForcedMarch.csproj",
+    "projectName": "ForcedMarch",
+    "projectPath": "C:\\Program Files (x86)\\Rimworld Royalty\\Mods\\Forced March\\Source\\ForcedMarch\\ForcedMarch.csproj",
+    "outputPath": "C:\\Program Files (x86)\\Rimworld Royalty\\Mods\\Forced March\\Source\\ForcedMarch\\obj\\",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "net472"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "net472": {
+        "projectReferences": {}
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "net472": {
+      "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+    }
+  }
+}

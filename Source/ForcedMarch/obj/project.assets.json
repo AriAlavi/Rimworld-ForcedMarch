@@ -1,0 +1,48 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": []
+  },
+  "packageFolders": {
+    "C:\\Users\\Ari\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Program Files (x86)\\Rimworld Royalty\\Mods\\Forced March\\Source\\ForcedMarch\\ForcedMarch.csproj",
+      "projectName": "ForcedMarch",
+      "projectPath": "C:\\Program Files (x86)\\Rimworld Royalty\\Mods\\Forced March\\Source\\ForcedMarch\\ForcedMarch.csproj",
+      "packagesPath": "C:\\Users\\Ari\\.nuget\\packages\\",
+      "outputPath": "C:\\Program Files (x86)\\Rimworld Royalty\\Mods\\Forced March\\Source\\ForcedMarch\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Ari\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
