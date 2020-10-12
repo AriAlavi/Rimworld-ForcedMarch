@@ -8,6 +8,7 @@ using RimWorld.Planet;
 using UnityEngine;
 using Verse;
 using Verse.Sound;
+using Multiplayer.API;
 
 namespace ForcedMarch
 {
@@ -35,30 +36,16 @@ namespace ForcedMarch
         }
     }
 
-
-    public class March
-    {
-        public March(Caravan caravan)
-        {
-            
-        }
-    }
-    
     [StaticConstructorOnStartup]
     public static class ForcedMarchUtility
     {
-        public static Dictionary<Caravan, bool> caravan_marches;
+        public static Dictionary<Caravan, bool> caravan_marches = new Dictionary<Caravan, bool>();
         
         public static readonly Texture2D ForcedMarchingTex =
             ContentFinder<Texture2D>.Get("UI/Commands/Marching", true);
         public static readonly Texture2D NoMarchingTex =
             ContentFinder<Texture2D>.Get("UI/Commands/NotMarching", true);
-
-        static ForcedMarchUtility()
-        {
-            caravan_marches = new Dictionary<Caravan, bool>();
-        }
-
+        
         public static bool GetCaravanMarch(Caravan caravan)
         {
             if (!caravan_marches.ContainsKey(caravan))
@@ -77,24 +64,25 @@ namespace ForcedMarch
         {
             caravan_marches[caravan] = !GetCaravanMarch(caravan);
         }
+ 
         
         public static Command_Action ForcedMarchCommand(Caravan caravan)
         {
-            bool current_state = GetCaravanMarch(caravan);
-            Texture2D selected_icon;
-            if (current_state == true)
+            bool currentState = GetCaravanMarch(caravan);
+            Texture2D selectedIcon;
+            if (currentState == true)
             {
-                selected_icon = ForcedMarchingTex;
+                selectedIcon = ForcedMarchingTex;
             }
             else
             {
-                selected_icon = NoMarchingTex;
+                selectedIcon = NoMarchingTex;
             }
-            Command_Action command_Action = new Command_Action
+            Command_Action commandAction = new Command_Action
             {
                 defaultLabel = "ForcedMarch".Translate(),
                 defaultDesc = "ForcedMarchDesc".Translate(),
-                icon = selected_icon,
+                icon = selectedIcon,
                 action = delegate()
                 {
                     SoundStarter.PlayOneShotOnCamera(SoundDefOf.Tick_High, null);
@@ -102,7 +90,7 @@ namespace ForcedMarch
                 }
             };
 
-            return command_Action;
+            return commandAction;
         }
 
     }

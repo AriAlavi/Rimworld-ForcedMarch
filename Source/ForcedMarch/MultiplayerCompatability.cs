@@ -1,20 +1,29 @@
-﻿using Multiplayer.API;
+﻿using System;
+using System.Collections.Generic;
+using System.Reflection;
+using System.Runtime.Serialization;
+using HarmonyLib;
+using Multiplayer.API;
+using RimWorld.Planet;
 using Verse;
 
 namespace ForcedMarch
 {
-    class MultiplayerCompatability
-    {
-        [StaticConstructorOnStartup]
-        static class MultiplayerCompatibility
-        {
-            static MultiplayerCompatibility()
-            {
-                 if (!MP.enabled) return;
 
-                // MP.RegisterSyncMethod(typeof(ForcedMarchUtility), nameof(ForcedMarchUtility.ForcedMarchCommand));
-                 MP.RegisterAll();
-            }
+    [StaticConstructorOnStartup]
+    static class MultiplayerCompatibility
+    {
+        private static Type marchingUtility;
+        private static FieldInfo marchingField;
+        static MultiplayerCompatibility()
+        {
+            if (!MP.enabled) return;
+            marchingUtility = AccessTools.TypeByName("ForcedMarch.ForcedMarchUtility");
+            marchingField = AccessTools.Field(marchingUtility, "caravan_marches");
+
+            MP.RegisterSyncMethod(typeof(ForcedMarchUtility), nameof(ForcedMarchUtility.FlipCaravanMarch));
+            MP.RegisterAll();
         }
+        
     }
 }
