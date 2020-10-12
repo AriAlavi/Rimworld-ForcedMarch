@@ -75,8 +75,8 @@ namespace ForcedMarch
             }
             Command_Action commandAction = new Command_Action
             {
-                defaultLabel = "ForcedMarch".Translate(),
-                defaultDesc = "ForcedMarchDesc".Translate(),
+                defaultLabel = "Forced March",
+                defaultDesc = "March without regard for sleep",
                 icon = selectedIcon,
                 action = delegate()
                 {
