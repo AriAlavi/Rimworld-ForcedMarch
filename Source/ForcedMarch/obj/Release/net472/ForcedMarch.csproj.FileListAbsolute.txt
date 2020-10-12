@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Rimworld Royalty\Mods\Forced March\Assemblies\net472\ForcedMarch.dll
+C:\Program Files (x86)\Rimworld Royalty\Mods\Forced March\Assemblies\net472\ForcedMarch.pdb
+C:\Program Files (x86)\Rimworld Royalty\Mods\Forced March\Source\ForcedMarch\obj\Release\net472\ForcedMarch.csprojAssemblyReference.cache
+C:\Program Files (x86)\Rimworld Royalty\Mods\Forced March\Source\ForcedMarch\obj\Release\net472\ForcedMarch.AssemblyInfoInputs.cache
+C:\Program Files (x86)\Rimworld Royalty\Mods\Forced March\Source\ForcedMarch\obj\Release\net472\ForcedMarch.AssemblyInfo.cs
+C:\Program Files (x86)\Rimworld Royalty\Mods\Forced March\Source\ForcedMarch\obj\Release\net472\ForcedMarch.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Rimworld Royalty\Mods\Forced March\Source\ForcedMarch\obj\Release\net472\ForcedMarch.csproj.CopyComplete
+C:\Program Files (x86)\Rimworld Royalty\Mods\Forced March\Source\ForcedMarch\obj\Release\net472\ForcedMarch.dll
+C:\Program Files (x86)\Rimworld Royalty\Mods\Forced March\Source\ForcedMarch\obj\Release\net472\ForcedMarch.pdb
