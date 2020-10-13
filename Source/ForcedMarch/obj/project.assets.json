@@ -1,11 +1,78 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v4.7.2": {}
+    ".NETFramework,Version=v4.7.2": {
+      "Lib.Harmony/2.0.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Runtime.InteropServices.RuntimeInformation"
+        ],
+        "compile": {
+          "lib/net472/0Harmony.dll": {}
+        },
+        "runtime": {
+          "lib/net472/0Harmony.dll": {}
+        }
+      },
+      "RimWorld.MultiplayerAPI/0.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net472/0MultiplayerAPI.dll": {}
+        },
+        "runtime": {
+          "lib/net472/0MultiplayerAPI.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Lib.Harmony/2.0.2": {
+      "sha512": "QzJnBhb8TiM0cYlxh82rHJMdhZNTmi9HNQQJ15qNyjMvdeDYF9V2aljmrnGafQ+bh6Af/L0iWHxuYlNrHck0nQ==",
+      "type": "package",
+      "path": "lib.harmony/2.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "HarmonyLogo.png",
+        "LICENSE",
+        "lib.harmony.2.0.2.nupkg.sha512",
+        "lib.harmony.nuspec",
+        "lib/net35/0Harmony.dll",
+        "lib/net35/0Harmony.xml",
+        "lib/net45/0Harmony.dll",
+        "lib/net45/0Harmony.xml",
+        "lib/net472/0Harmony.dll",
+        "lib/net472/0Harmony.xml",
+        "lib/net48/0Harmony.dll",
+        "lib/net48/0Harmony.xml",
+        "lib/netcoreapp3.0/0Harmony.dll",
+        "lib/netcoreapp3.0/0Harmony.xml",
+        "lib/netcoreapp3.1/0Harmony.dll",
+        "lib/netcoreapp3.1/0Harmony.xml"
+      ]
+    },
+    "RimWorld.MultiplayerAPI/0.2.0": {
+      "sha512": "WWOclOyfcN+/FMbX2MpYBY2HYEMiOsB+moXOVOoFgfx8grOcTlBcxHh2KAPqxgV1Gwsa4+I26pmKQ4Qce3aNOw==",
+      "type": "package",
+      "path": "rimworld.multiplayerapi/0.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net472/0MultiplayerAPI.dll",
+        "rimworld.multiplayerapi.0.2.0.nupkg.sha512",
+        "rimworld.multiplayerapi.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.7.2": []
+    ".NETFramework,Version=v4.7.2": [
+      "Lib.Harmony >= 2.0.2",
+      "RimWorld.MultiplayerAPI >= 0.2.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Ari\\.nuget\\packages\\": {}
@@ -41,6 +108,16 @@
     },
     "frameworks": {
       "net472": {
+        "dependencies": {
+          "Lib.Harmony": {
+            "target": "Package",
+            "version": "[2.0.2, )"
+          },
+          "RimWorld.MultiplayerAPI": {
+            "target": "Package",
+            "version": "[0.2.0, )"
+          }
+        },
         "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }

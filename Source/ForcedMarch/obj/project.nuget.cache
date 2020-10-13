@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "5wBUsiyxStkip1ody/QBG1I9Xy9bzETJ367wVCPaGWppmgz0q5KQpMe/EKtnEckLM2fjJUPYsATIeKTPfzY/NA==",
+  "dgSpecHash": "5cqu9uJsE8/a1+zpRmZNTaCCojivsesvN+BynaOOu+n7rWFag4KwilxokTS0q5cr2/Rg6NeUKIFBDCziyqYk/Q==",
   "success": true,
   "projectFilePath": "C:\\Program Files (x86)\\Rimworld Royalty\\Mods\\Forced March\\Source\\ForcedMarch\\ForcedMarch.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Ari\\.nuget\\packages\\lib.harmony\\2.0.2\\lib.harmony.2.0.2.nupkg.sha512",
+    "C:\\Users\\Ari\\.nuget\\packages\\rimworld.multiplayerapi\\0.2.0\\rimworld.multiplayerapi.0.2.0.nupkg.sha512"
+  ],
   "logs": []
 }
